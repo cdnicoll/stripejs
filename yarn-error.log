@@ -1,0 +1,36 @@
+Arguments: 
+  /Users/cdnicoll/.nvm/versions/node/v10.15.3/bin/node /usr/local/Cellar/yarn/1.17.3/libexec/bin/yarn.js init
+
+PATH: 
+  /Users/cdnicoll/.rvm/gems/ruby-2.6.2/bin:/Users/cdnicoll/.rvm/gems/ruby-2.6.2@global/bin:/Users/cdnicoll/.rvm/rubies/ruby-2.6.2/bin:/Users/cdnicoll/.nvm/versions/node/v10.15.3/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/cdnicoll/.rvm/bin
+
+Yarn version: 
+  1.17.3
+
+Node version: 
+  10.15.3
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: canceled
+      at Interface.<anonymous> (/usr/local/Cellar/yarn/1.17.3/libexec/lib/cli.js:136724:13)
+      at Interface.emit (events.js:189:13)
+      at Interface._ttyWrite (readline.js:783:16)
+      at ReadStream.onkeypress (readline.js:168:10)
+      at ReadStream.emit (events.js:189:13)
+      at emitKeys (internal/readline.js:424:14)
+      at emitKeys.next (<anonymous>)
+      at ReadStream.onData (readline.js:1022:36)
+      at ReadStream.emit (events.js:189:13)
+      at addChunk (_stream_readable.js:284:12)
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
