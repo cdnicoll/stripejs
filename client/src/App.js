@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 import { Checkout, CheckoutSuccess, CheckoutFail } from './Checkout';
 import Payments from './Payments';
-import Customers from './Customers';
+// import Customers from './Customers';
 import Subscriptions from './Subscriptions';
 
 function App() {
@@ -32,14 +32,14 @@ function App() {
                 Payments
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link to="/customers">
                 <span aria-label="emoji" role="img">
                   🧑🏿‍🤝‍🧑🏻
                 </span>{' '}
                 Customers
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link to="/subscriptions">
                 <span aria-label="emoji" role="img">
@@ -59,9 +59,9 @@ function App() {
             <Route path="/payments">
               <Payments />
             </Route>
-            <Route path="/customers">
+            {/* <Route path="/customers">
               <Customers />
-            </Route>
+            </Route> */}
             <Route path="/subscriptions">
               <Subscriptions />
             </Route>
