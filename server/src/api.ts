@@ -5,16 +5,16 @@ import { createPaymentIntent } from './payments';
 import { handleStripeWebhook } from './webhooks';
 
 export const app = express();
+// Allows cross origin requests
 app.use(cors({ origin: true }));
-app.use(express.json());
 
 // Sets rawBody for webhook handling
-// This allows us to access the buffer from any one of our endpoints
 app.use(
   express.json({
-    verify: (req, res, buffer) => (req['rawBody'] = buffer)
+    verify: (req, res, buffer) => (req['rawBody'] = buffer),
   })
-)
+);
+
 
 app.post('/test', (req: Request, res: Response) => {
   const amount = req.body.amount;
