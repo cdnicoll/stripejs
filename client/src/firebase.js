@@ -10,8 +10,8 @@ export const firebaseConfig = {
   projectId: "ocupop-sandbox",
   storageBucket: "ocupop-sandbox.appspot.com",
   messagingSenderId: "333542743522",
-  appId: "1:333542743522:web:e12ff9fab1b8817d69adbb",
-  measurementId: "G-L456HSK9E0"
+  appId: "1:333542743522:web:07454dc6687dc30469adbb",
+  measurementId: "G-Y2F98F4FPF"
 };
 
 firebase.initializeApp(firebaseConfig)

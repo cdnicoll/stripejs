@@ -1,4 +1,5 @@
 import { auth } from './firebase';
+// const API = 'https://stripe-server-apw6lsu5yq-uc.a.run.app';
 const API = 'http://localhost:3333';
 
 /**
@@ -22,4 +23,3 @@ export async function fetchFromAPI(endpointURL, opts) {
 
   return res.json();
 }
-

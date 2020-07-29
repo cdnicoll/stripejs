@@ -1,0 +1,14 @@
+{
+  "name": "stripe-js",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Cody Nicoll <cdnicoll@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "checkLint": "eslint '**/*.js' --ignore-pattern node_modules/",
+    "lint": "eslint --fix '**/*.js' --ignore-pattern node_modules/"
+  },
+  "devDependencies": {
+    "@ocupop/eslint-config": "0.0.13"
+  }
+}
