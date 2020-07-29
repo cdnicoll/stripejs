@@ -6,6 +6,9 @@ import firebase from 'firebase/app';
 
 import { auth, db } from './firebase';
 
+/**
+ * Sign In Button Component
+ */
 export function SignIn() {
   const signIn = async () => {
     const credential = await auth.signInWithPopup(
@@ -22,6 +25,9 @@ export function SignIn() {
   );
 }
 
+/**
+ * Sign Out Button Component
+ */
 export function SignOut(props) {
   return props.user && (
 
@@ -31,6 +37,21 @@ export function SignOut(props) {
   );
 }
 
+/**
+ * Credit Card Component Component
+ */
+function CreditCard(props) {
+  const { last4, brand, exp_month, exp_year } = props.card;
+  return (
+    <option>
+      {brand} **** **** **** {last4} expires {exp_month}/{exp_year}
+    </option>
+  );
+}
+
+/**
+ * Save Card Component
+ */
 function SaveCard(props) {
   const stripe = useStripe();
   const elements = useElements();
@@ -140,15 +161,9 @@ function SaveCard(props) {
   );
 }
 
-function CreditCard(props) {
-  const { last4, brand, exp_month, exp_year } = props.card;
-  return (
-    <option>
-      {brand} **** **** **** {last4} expires {exp_month}/{exp_year}
-    </option>
-  );
-}
-
+/**
+ * Customer Component
+ */
 export default function Customers() {
   return (
     <Suspense fallback={'loading user'}>
