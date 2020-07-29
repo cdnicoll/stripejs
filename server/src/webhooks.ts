@@ -23,12 +23,10 @@ const webhookHandlers = {
  * Validate the stripe webhook secret, then call the handler for the event type
  */
 export const handleStripeWebhook = async(req, res) => {
-  console.log("@DEBUG::07282020-030453");
   const sig = req.headers['stripe-signature']
   const event = stripe.webhooks.constructEvent(req['rawBody'], sig, process.env.STRIPE_WEBHOOK_SECRET)
 
   try {
-    console.log(event.type)
     await webhookHandlers[event.type](event.data.object);
     res.send({received: true});
   } catch (err) {
