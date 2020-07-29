@@ -1,0 +1,9 @@
+/**
+* @type { import("eslint").Options }
+*/
+{
+  "extends": [
+    "@ocupop/eslint-config"
+  ]
+  // Override other rules here...
+}
